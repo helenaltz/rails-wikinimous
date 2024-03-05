@@ -1,0 +1,7 @@
+<h1 class= font-family: "Helvetica Neue" Helvetica, Arial, sans-serif font-size: 14px line-height: 1.428571429 color: #333333;><%= @article.title %></h1>
+<p><%= @article.content %></p>
+<%= link_to "back to list", articles_path %>
+<%= link_to "Delete",
+  article_path(@article),
+  data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}
+%>
